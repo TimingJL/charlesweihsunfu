@@ -21,8 +21,8 @@ const NavigationBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{ background: '#FFF' }}>
         <Toolbar>
-          <Image src={LogoPath} width={32} height={32} />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: PRIMARY_COLOR }}>
+          <Image src={LogoPath} width={44} height={44} />
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1, color: PRIMARY_COLOR, fontWeight: '700' }}>
             傅偉勳基金會
           </Typography>
           <SideMenu />
