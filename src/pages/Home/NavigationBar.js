@@ -16,7 +16,7 @@ const Image = styled.img`
 const NavigationBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <Image src={LogoPath} width={32} height={32} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
