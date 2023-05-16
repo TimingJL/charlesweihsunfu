@@ -23,7 +23,6 @@ const SideMenu = () => {
         edge="start"
         color="inherit"
         aria-label="menu"
-        sx={{ mr: 2 }}
         onClick={handleDrawerOpen}
       >
         <MenuIcon sx={{ color: PRIMARY_COLOR }} />
