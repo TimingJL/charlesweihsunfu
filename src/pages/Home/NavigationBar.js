@@ -18,7 +18,7 @@ const NavigationBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Image src={LogoPath} width={32} height={32}/>
+          <Image src={LogoPath} width={32} height={32} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             傅偉勳基金會
           </Typography>
