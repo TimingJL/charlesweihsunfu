@@ -11,6 +11,7 @@ import LogoPath from '../../assets/FuLogo.jpg';
 import SideMenu from './SideMenu';
 
 const Image = styled.img`
+    object-fit: contain;
     border-radius: 4px;
     margin-right: 8px;
 `;
