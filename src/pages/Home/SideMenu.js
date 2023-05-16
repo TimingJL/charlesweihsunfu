@@ -4,6 +4,8 @@ import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import { PRIMARY_COLOR } from '../../theme/color';
+
 const SideMenu = () => {
   const [open, setOpen] = React.useState(false);
 
@@ -24,14 +26,16 @@ const SideMenu = () => {
         sx={{ mr: 2 }}
         onClick={handleDrawerOpen}
       >
-        <MenuIcon />
+        <MenuIcon sx={{ color: PRIMARY_COLOR }} />
       </IconButton>
       <Drawer
         anchor={'right'}
         open={open}
         onClose={handleDrawerClose}
       >
-        {'123'}
+        <div style={{ width: 300 }}>
+          side menu
+        </div>
       </Drawer>
     </>
   );

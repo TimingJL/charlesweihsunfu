@@ -6,13 +6,12 @@ import AvatarPath from '../../assets/avatar.jpeg';
 
 const Background = styled.div`
     background: url(${BackgroundPath});
-    width: 100vw;
+    max-width: 100vw;
     min-height: calc(100vh - 64px);
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 0;
-    overflow: hidden;
 
     display: flex;
     justify-content: flex-start;
@@ -21,19 +20,24 @@ const Background = styled.div`
 `;
 
 const Mask = styled.div`
-    background-color: white;
-    opacity: 0.5;
-    width: 100vw;
-    height: 100vh;
+    background-color: #a9a9a9;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 64px);
     position: absolute;
     z-index: -1;
+    overflow: hidden;
 `;
 
 const Avatar = styled.img`
     border-radius: 100%;
-    margin-right: 8px;
     margin-top: 200px;
-    border: 6px solid white;
+    border: 6px solid #FFF;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    @media screen and (max-width: 900px) {
+      margin-top: 100px;
+    }
 `;
 
 const H2 = styled.h2`
@@ -54,7 +58,7 @@ const Description = styled.p`
     color: white;
     font-size: 24px;
     max-width: 700px;
-    margin: 12px 20px;
+    margin: 12px 20px 60px;
     text-align: center;
     text-shadow: 1px 1px 2px #111;
     @media screen and (max-width: 900px) {
