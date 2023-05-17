@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 import BackgroundPath from '../../assets/SkyBgCompress.jpg';
 import AvatarPath from '../../assets/avatar.jpeg';
