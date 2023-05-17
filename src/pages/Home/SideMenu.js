@@ -1,12 +1,12 @@
 import React from 'react';
+import { useTheme } from 'styled-components/macro';
 
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { PRIMARY_COLOR } from '../../theme/color';
-
 const SideMenu = () => {
+  const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -25,7 +25,7 @@ const SideMenu = () => {
         aria-label="menu"
         onClick={handleDrawerOpen}
       >
-        <MenuIcon sx={{ color: PRIMARY_COLOR }} />
+        <MenuIcon sx={{ color: theme.color.primary }} />
       </IconButton>
       <Drawer
         anchor={'right'}

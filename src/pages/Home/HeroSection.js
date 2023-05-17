@@ -35,8 +35,12 @@ const Avatar = styled.img`
     margin-top: 200px;
     border: 6px solid #FFF;
     box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
-    @media screen and (max-width: 900px) {
-      margin-top: 100px;
+    @media
+    ${(props) => props.theme.device.tablet},
+    ${(props) => props.theme.device.smTablet},
+    ${(props) => props.theme.device.mobile},
+    {
+        margin-top: 100px;
     }
 `;
 
@@ -46,10 +50,15 @@ const H2 = styled.h2`
     margin: 12px 20px;
     text-align: center;
     text-shadow: 1px 1px 2px #111;
-    @media screen and (max-width: 900px) {
+    @media
+    ${(props) => props.theme.device.tablet},
+    ${(props) => props.theme.device.smTablet},
+    {
         font-size: 32px;
     }
-    @media screen and (max-width: 486px) {
+    @media
+    ${(props) => props.theme.device.mobile},
+    {
         font-size: 24px;
     }
 `;
@@ -61,10 +70,15 @@ const Description = styled.p`
     margin: 12px 20px 60px;
     text-align: center;
     text-shadow: 1px 1px 2px #111;
-    @media screen and (max-width: 900px) {
+    @media
+    ${(props) => props.theme.device.tablet},
+    ${(props) => props.theme.device.smTablet},
+    {
         font-size: 18px;
     }
-    @media screen and (max-width: 486px) {
+    @media
+    ${(props) => props.theme.device.mobile},
+    {
         font-size: 16px;
     }
 `;
