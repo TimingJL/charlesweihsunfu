@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from 'styled-components/macro';
+import { useTheme } from 'styled-components';
 
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
