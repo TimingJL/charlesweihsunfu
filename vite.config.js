@@ -8,6 +8,7 @@ export default defineConfig(() => {
     define: {
       'process.env': {},
     },
+    base: '/',
     resolve: {
       alias: {
         src: './src',
@@ -19,7 +20,7 @@ export default defineConfig(() => {
       open: true,
     },
     build: {
-      outDir: 'build',
+      outDir: 'dist',
     },
     plugins: [
       react(),
