@@ -13,3 +13,12 @@ npm run deploy
 ```
 
 https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
+
+
+## Reference
+
+**Animation**
+- https://www.npmjs.com/package/react-reveal
+
+**Markdown**
+- https://www.npmjs.com/package/react-markdown

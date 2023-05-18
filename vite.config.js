@@ -8,7 +8,7 @@ export default defineConfig(() => {
     define: {
       'process.env': {},
     },
-    base: '/charlesweihsunfu',
+    base: '/',
     resolve: {
       alias: {
         src: './src',
