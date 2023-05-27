@@ -1,5 +1,4 @@
 import * as React from 'react';
-import styled from 'styled-components';
 
 import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,10 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import NavigationBar from './NavigationBar';
 import HeroSection from './HeroSection';
+import Introduction from './Introduction';
 
-const Container = styled.div`
-
-`;
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -46,9 +43,8 @@ const Home = (props) => {
         <NavigationBar />
       </ElevationScroll>
       <Toolbar />
-      <Container>
-        <HeroSection />
-      </Container>
+      <HeroSection />
+      <Introduction />
     </React.Fragment>
   );
 };
