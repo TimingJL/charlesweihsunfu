@@ -7,6 +7,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import NavigationBar from './NavigationBar';
 import HeroSection from './HeroSection';
 import Introduction from './Introduction';
+import Footer from './Footer';
 
 
 function ElevationScroll(props) {
@@ -45,6 +46,7 @@ const Home = (props) => {
       <Toolbar />
       <HeroSection />
       <Introduction />
+      <Footer />
     </React.Fragment>
   );
 };
