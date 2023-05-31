@@ -3,9 +3,12 @@ import styled from 'styled-components';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
+
 
 import CardImg1 from '../../assets/hsilai.jpg';
 import SDSU_Img from '../../assets/SDSU_Arts_&_Letters_New_Building.jpg';
+import { routePathConfig } from '../../route';
 
 const StyledContainer = styled(Container)`
   margin-top: 100px;
@@ -76,7 +79,10 @@ const Description = styled.div`
 
 const buttonSX = { width: '100px', marginTop: 2, boxShadow: 'none' };
 
+
+
 const Introduction = () => {
+  const navigate = useNavigate();
   return(
     <StyledContainer maxWidth="md">
       <Stack spacing={8}>
@@ -90,7 +96,7 @@ const Introduction = () => {
               <Title>An Introduction to the Charles Wei-Hsun Fu Foundation</Title>
               <Description>The Charles Wei-Hsun FU FOUNDATION, a tax-exempt foundation, was organized in 1997 in loving memory of the life and work of CHARLES WEI-HSUN FU (1933-1996),. . . .</Description>
               <Stack spacing={4} alignItems="flex-end">
-                <Button variant="contained" sx={buttonSX}>More</Button>
+                <Button variant="contained" sx={buttonSX} onClick={() => {navigate(routePathConfig.about);}}>More</Button>
               </Stack>
             </Content>
           </Card>
@@ -105,7 +111,7 @@ const Introduction = () => {
               <Title>The Charles Wei-Hsun Fu Scholarship in Chinese Thought & Culture</Title>
               <Description>beginning in Fall, 2005 in cooperation with the SDSU College of Arts & Letters and the China Studies Institute, . . .</Description>
               <Stack spacing={4} alignItems="flex-end">
-                <Button variant="contained" sx={buttonSX}>More</Button>
+                <Button variant="contained" sx={buttonSX} onClick={() => {navigate(routePathConfig.scholarship);}}>More</Button>
               </Stack>
             </Content>
           </Card>
