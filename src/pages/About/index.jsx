@@ -4,7 +4,13 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 
+import Introduction from './Introduction';
+import TheBirth from './TheBirth';
+import Remembering from './Remembering';
+import Organizations from './Organizations';
 import backgroundImg from '../../assets/SkyBgCompress.jpg';
 
 const PageHeader = styled.div`
@@ -24,15 +30,21 @@ const PageHeader = styled.div`
   letter-spacing: 4px;
 `;
 
+const Content = styled.div`
+  background: #E3F2FD;
+  min-height: 100%;
+  padding: 40px 0px;
+`;
+
 const About = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.device.mobile, { noSsr: true });
   const isSmTablet = useMediaQuery(theme.device.smTablet, { noSsr: true });
   const isTablet = useMediaQuery(theme.device.tablet, { noSsr: true });
-  const [value, setValue] = React.useState(0);
+  const [tabIndex, setTabIndex] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+  const handleChange = (event, newIndex) => {
+    setTabIndex(newIndex);
   };
 
   return (
@@ -40,7 +52,7 @@ const About = () => {
       <PageHeader>about</PageHeader>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs
-          value={value}
+          value={tabIndex}
           onChange={handleChange}
           {...(isMobile || isSmTablet || isTablet ? {
             variant: 'scrollable',
@@ -56,6 +68,16 @@ const About = () => {
           <Tab value={3} label="Organizations Supported" />
         </Tabs>
       </Box>
+      <Content>
+        <Container>
+          <Stack spacing={2}>
+            {tabIndex === 0 && <Introduction />}
+            {tabIndex === 1 && <TheBirth />}
+            {tabIndex === 2 && <Remembering />}
+            {tabIndex === 3 && <Organizations />}
+          </Stack>
+        </Container>
+      </Content>
     </>
   );
 };

@@ -19,7 +19,7 @@ const NavigationBar = () => {
   const theme = useTheme();
   return (
     <Box sx={{ position: 'relative', zIndex: 1 }}>
-      <AppBar component="nav" sx={{ background: '#FFF' }} position="static">
+      <AppBar component="nav" sx={{ background: '#FFF', height: '64px' }} position="static">
         <Toolbar>
           <Image src={LogoPath} width={44} height={44} />
           <Typography variant="h5" component="div" sx={{ flexGrow: 1, color: theme.color.primary, fontWeight: '700' }}>

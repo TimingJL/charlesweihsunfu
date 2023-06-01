@@ -18,8 +18,6 @@ const Container = styled.div`
   overflow-y: auto;
 `;
 
-
-
 function App() {
   return (
     <>
