@@ -9,7 +9,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { useNavigate } from 'react-router-dom';
-import { routePathConfig } from '../../route';
+import { routePathConfig } from '../route';
 
 const SideMenu = () => {
   const navigate = useNavigate();
@@ -41,33 +41,63 @@ const SideMenu = () => {
       >
         <List sx={{ width: '300px'}}>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.home);}}>
-              <ListItemText primary="Home" />
+            <ListItemButton
+              onClick={() => {
+                navigate(routePathConfig.home);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="Home" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.about);}}>
-              <ListItemText primary="About" />
+            <ListItemButton
+              onClick={() => {
+                navigate(routePathConfig.about);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="About" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.publications);}}>
-              <ListItemText primary="Publications" />
+            <ListItemButton
+              onClick={() => {
+                navigate(routePathConfig.publications);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="Publications" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.scholarship);}}>
-              <ListItemText primary="Scholarship" />
+            <ListItemButton
+              onClick={() => {
+                navigate(routePathConfig.scholarship);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="Scholarship" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.essay);}}>
-              <ListItemText primary="Essay" />
+            <ListItemButton
+              onClick={() => {
+                navigate(routePathConfig.essay);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="Essay" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => {navigate(routePathConfig.contact);}}>
-              <ListItemText primary="Contact Us" />
+            <ListItemButton 
+              onClick={() => {
+                navigate(routePathConfig.contact);
+                handleDrawerClose();
+              }}
+            >
+              <ListItemText sx={{ textAlign: 'center', color: '#3066BE' }} primary="Contact Us" />
             </ListItemButton>
           </ListItem>
         </List>
