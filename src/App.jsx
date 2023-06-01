@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -32,6 +33,7 @@ function App() {
           <Route path={routePathConfig.scholarship} element={<Scholarship />} />
           <Route path={routePathConfig.publications} element={<Publications />} />
         </Routes>
+        <Footer />
       </Container>
     </>
   );
