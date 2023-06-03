@@ -42,7 +42,7 @@ const TheBirth = () => {
       </p>
       <p>
         <h4 style={{ fontWeight: '900'}}>MISSION: </h4>
-        <li>To promote and disseminate the works of Dr. Charles Wei-hsun Fu`}</li>
+        <li>To promote and disseminate the works of Dr. Charles Wei-hsun Fu</li>
         <li>The support the research of students and scholars in the field of Asian philosophy, especially Chinese philosophy</li>
         <li>To encourage exploration of Life-and-Death Studies (reflecting Dr. Fu's intended roles as Director of the Life and Death Institute at Fo Guang University)</li>
         <li>To address important social issues espoused by Dr. Fu, such as environmentalism, animals rights, etc.</li>
