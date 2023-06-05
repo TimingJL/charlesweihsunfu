@@ -22,7 +22,7 @@ const Container = styled.div`
 function App() {
   return (
     <>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <NavigationBar />
       <Container>
         <Routes>
