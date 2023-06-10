@@ -1,5 +1,14 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import styled from 'styled-components';
+
+import LogoPath from '../../assets/FuLogo.jpg';
+
+const Image = styled.img`
+  object-fit: contain;
+  border-radius: 4px;
+  margin-right: 8px;
+`;
 
 const Introduction = () => {
   return (
@@ -107,6 +116,11 @@ const Introduction = () => {
 
       <h2 id="section-4" className='about-title'>{`ABOUT THE FU FOUNDATION LOGO`}</h2>
       <div className='about-content'>
+        <p>
+          {`The butterfly is a favored symbol in many cultures. In China it is linked with:`}
+        </p>
+        <Image src={LogoPath} sx={{height: '100%'}} />
+
       </div>
 
       <hr />
