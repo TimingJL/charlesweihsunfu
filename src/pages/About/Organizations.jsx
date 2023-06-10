@@ -12,24 +12,24 @@ const Organizations = () => {
     <Box sx={{ background: 'white', borderRadius: 2, padding: 4, boxShadow: 1 }}>
       <h2><strong>ORGANIZATIONS SUPPORTED BY THE FU FOUNDATION</strong></h2>
       <H4>
-        <p>
+        <div>
           {`CREATIVE ART & COMMUNICATIONS INSTITUTE`}
-        </p>
-        <p>
+        </div>
+        <div>
           {`ECOLOGICAL LIFE SYSTEMS INSTITUTE, INC.`}
-        </p>
-        <p>
+        </div>
+        <div>
           {`HELEN WOODWARD ANIMAL CENTER`}
-        </p>
+        </div>
         <blockquote>
           {`5 year pledge to capital campaign`}
         </blockquote>
-        <p>
+        <div>
           {`INTERNATIONAL SOCIETY FOR PHILOSOPHY & PSYCHOTHERAPY (ISPP)`}
-        </p>
-        <p>
+        </div>
+        <div>
           {`ZOOLOGICAL SOCIETY OF SAN DIEGO`}
-        </p>
+        </div>
         <blockquote>
           {`2002/2003--New Heart of the Zoo (Ken Allen Tribute)`}
         </blockquote>
