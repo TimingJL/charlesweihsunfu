@@ -1,6 +1,5 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import styled from 'styled-components';
 
 import LogoPath from '../../assets/FuLogo.jpg';
 

@@ -79,7 +79,7 @@ const About = () => {
         </Container>
       </Content>
     </>
-  );
+  ); 
 };
 
 export default About;
