@@ -1,40 +1,41 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import { H2, Subtitle, P, Divider } from 'src/components/commonStyled';
 
 const Fiu = () => {
   return (
     <Box sx={{ background: 'white', borderRadius: 2, padding: 4, boxShadow: 1 }}>
-      <div style={{fontSize: '20px', margin: '50px'}}>
-        <h3><strong>{`THE FU FOUNDATION SCHOLARSHIP AT FIU`}</strong></h3>
-        <div>{`$2000 in travel grants to Asia provided annually for students of the Asian Studies Institute Florida International University, Miami, Florida.`}</div>
-        <div>
-          <div>{`Scholarship application details can be found at the following link:`}</div>
+      <div style={{ margin: '50px 0px' }}>
+        <H2>{`THE FU FOUNDATION SCHOLARSHIP AT FIU`}</H2>
+        <Subtitle>{`$2000 in travel grants to Asia provided annually for students of the Asian Studies Institute Florida International University, Miami, Florida.`}</Subtitle>
+        <Subtitle>
+          <P>{`Scholarship application details can be found at the following link:`}</P>
           <a href="https://asian.fiu.edu/study-abroad/scholarships/fu-foundation-scholarship/">{`https://asian.fiu.edu/study-abroad/scholarships/fu-foundation-scholarship/`}</a>
-        </div>
+        </Subtitle>
       </div>
 
       <br />
-      
+
       <div><strong>{`2008 Scholarship Recipients`}</strong></div>
       <div>
         <h4><strong>{`Doria Bareket`}</strong></h4>
         <div>{`an Asian Studies Major, will be spending a semester at Ritsumeikan University in Kyoto, Japan.`}</div>
-        
+
         <h4><strong>{`Gregg Burrow`}</strong></h4>
         <div>{`a Japanese Studies Certificate student, traveled to Hiroshima for a seminar on the atomic bombing.`}</div>
-      
+
         <h4><strong>{`Stephanie Cua and Yakelin Wong`}</strong></h4>
         <div>{`are both in the Japanese Studies Certificate program and will be spending a semester at Kansai Gaidai University in Osaka, Japan.`}</div>
-      
+
         <h4><strong>{`Karyna Do Monte`}</strong></h4>
         <div>{`is traveling to India for studies of religion and culture in pursuit of the Graduate Asian Studies Certificate.`}</div>
-      
+
         <h4><strong>{`Boris Escalona`}</strong></h4>
         <div>{`also an Asian Studies Major, will be attending the Ritsumeikan University program in summer 2008.`}</div>
-      
+
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2007 Scholarship Recipients`}</strong></div>
       <div>
@@ -54,7 +55,7 @@ const Fiu = () => {
         <div>{`an Asian Studies major, spent the Fall semester abroad at Kansai Gaidai University in Japan.`}</div>
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2006 Scholarship Recipients`}</strong></div>
       <div>
@@ -69,7 +70,7 @@ const Fiu = () => {
 
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2005 Scholarship Recipients`}</strong></div>
       <div>
@@ -86,7 +87,7 @@ const Fiu = () => {
         <div>{`Kathy, an Environmental Studies MA student who is also completing a graduate certificate in Asian Studies, will be doing her thesis research in Southern India over the summer. She will be investigating the socio-economic challenges of restoring mangrove forests in commercial aquacultures in the area.`}</div>
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2004 Scholarship Recipients`}</strong></div>
       <div>
@@ -104,7 +105,7 @@ const Fiu = () => {
 
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2003 Scholarship Recipients`}</strong></div>
       <div>
@@ -122,22 +123,22 @@ const Fiu = () => {
 
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2002 Scholarship Recipients`}</strong></div>
       <div>
         <h4><strong>{`Luis Dionisio - (Year in Japan)`}</strong></h4>
-      
+
         <h4><strong>{`Dareth Iseda - (Summer in Japan)`}</strong></h4>
-        
+
         <h4><strong>{`Daniell Jaramillo - (Semester in Japan)`}</strong></h4>
-        
+
         <h4><strong>{`Timothy Knapp - (Summer in Japan)`}</strong></h4>
-        
+
         <h4><strong>{`Damaris Ramos - (Conference in Malaysia)`}</strong></h4>
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2001 Scholarship Recipients`}</strong></div>
       <div>
@@ -151,7 +152,7 @@ const Fiu = () => {
         <div>{`Jessica, an Asian Studies B.A. student, will spend three months studying in Xian, China.`}</div>
       </div>
 
-      <hr />
+      <Divider />
 
       <div><strong>{`2000 Scholarship Recipients`}</strong></div>
       <div>

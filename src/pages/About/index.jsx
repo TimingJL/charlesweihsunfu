@@ -7,28 +7,11 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 
+import { PageHeader } from 'src/components/commonStyled';
 import Introduction from './Introduction';
 import TheBirth from './TheBirth';
 import Remembering from './Remembering';
 import Organizations from './Organizations';
-import backgroundImg from '../../assets/SkyBgCompress.jpg';
-
-const PageHeader = styled.div`
-  background: url(${backgroundImg});
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-family: 'Playfair Display';
-  font-weight: 900;
-  letter-spacing: 4px;
-`;
 
 const Content = styled.div`
   background: #E3F2FD;
@@ -62,7 +45,7 @@ const About = () => {
             centered: true
           })}
         >
-          <Tab value={0} label="Introduction"  />
+          <Tab value={0} label="Introduction" />
           <Tab value={1} label="The Birth" />
           <Tab value={2} label="Remembering" />
           <Tab value={3} label="Organizations Supported" />
@@ -79,7 +62,7 @@ const About = () => {
         </Container>
       </Content>
     </>
-  ); 
+  );
 };
 
 export default About;

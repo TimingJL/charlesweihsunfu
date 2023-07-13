@@ -7,29 +7,12 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 
+import { PageHeader } from 'src/components/commonStyled';
 import ChineseThought from './ChineseThought';
 import Fiu from './Fiu';
 import SDSUpbt from './SDSUpbt';
 import Rowan from './Rowan';
 import SDSUWomen from './SDSUWomen';
-import backgroundImg from '../../assets/SkyBgCompress.jpg';
-
-const PageHeader = styled.div`
-  background: url(${backgroundImg});
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-family: 'Playfair Display';
-  font-weight: 900;
-  letter-spacing: 4px;
-`;
 
 const Content = styled.div`
   background: #E3F2FD;
@@ -63,7 +46,7 @@ const Scholarship = () => {
             centered: true
           })}
         >
-          <Tab value={0} label="CHINESE THOUGHT and CULTURE"  />
+          <Tab value={0} label="CHINESE THOUGHT and CULTURE" />
           <Tab value={1} label="FIU" />
           <Tab value={2} label="SDSU PHI BETA DELTA" />
           <Tab value={3} label="ROWAN" />
@@ -82,7 +65,7 @@ const Scholarship = () => {
         </Container>
       </Content>
     </>
-  ); 
+  );
 };
 
 export default Scholarship;

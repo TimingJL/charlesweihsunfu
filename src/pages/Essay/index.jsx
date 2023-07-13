@@ -7,27 +7,10 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 
+import { PageHeader } from 'src/components/commonStyled';
 import EssayContest from './EssayContest';
 import PastISCPAwardess from './PastISCPAwardess';
 import ApplicationForm from './ApplicationForm.jsx';
-import backgroundImg from '../../assets/SkyBgCompress.jpg';
-
-const PageHeader = styled.div`
-  background: url(${backgroundImg});
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-family: 'Playfair Display';
-  font-weight: 900;
-  letter-spacing: 4px;
-`;
 
 const Content = styled.div`
   background: #E3F2FD;
@@ -61,7 +44,7 @@ const Essay = () => {
             centered: true
           })}
         >
-          <Tab value={0} label="Essay Contest"  />
+          <Tab value={0} label="Essay Contest" />
           <Tab value={1} label="PAST ISCP AWARDEES" />
           <Tab value={2} label="APPLICATION FORM" />
         </Tabs>
@@ -76,7 +59,7 @@ const Essay = () => {
         </Container>
       </Content>
     </>
-  ); 
+  );
 };
 
 export default Essay;
