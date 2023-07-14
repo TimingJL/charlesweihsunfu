@@ -1,6 +1,41 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { H2, P, UL, Divider } from 'src/components/commonStyled';
+import { H2, P, UL, AwardCard } from 'src/components/commonStyled';
+
+const awards = [
+  {
+    title: '2008 Awardee',
+    winners: [
+      {
+        name: 'Tonya Warren'
+      }
+    ]
+  },
+  {
+    title: '2007 Awardee',
+    winners: [
+      {
+        name: 'Tonya Warren'
+      }
+    ]
+  },
+  {
+    title: '2006 Awardee',
+    winners: [
+      {
+        name: 'Tonya Warren'
+      }
+    ]
+  },
+  {
+    title: '2005 Awardee',
+    winners: [
+      {
+        name: 'Tonya Warren'
+      }
+    ]
+  }
+];
 
 const ChineseThought = () => {
   return (
@@ -22,18 +57,18 @@ const ChineseThought = () => {
       <P>{`Application period - March  through May`}</P>
       <P>{`Please visit the SDSU scholarship page (under C) for further details and application form.`}</P>
       <P>{`An essay is required for the application (2 pages maximum) including why you chose your major or educational program, your career plans, how your orientation to Chinese thought and culture factors into your educational and career choices.`}</P>
-      <Divider />
-      <div><strong>{`2008 Awardee`}</strong></div>
-      <h4><strong>{`Tonya Warren`}</strong></h4>
-      <Divider />
-      <div><strong>{`2007 Awardee`}</strong></div>
-      <h4><strong>{`Tonya Warren`}</strong></h4>
-      <Divider />
-      <div><strong>{`2006 Awardee`}</strong></div>
-      <h4><strong>{`Tonya Warren`}</strong></h4>
-      <Divider />
-      <div><strong>{`2005 Awardee`}</strong></div>
-      <h4><strong>{`Tonya Warren`}</strong></h4>
+      {
+        awards.map((item) => (
+          <AwardCard key={item.title}>
+            <div className="award__title">{item.title}</div>
+            <UL>
+              {item.winners.map((winner) => (
+                <li key={winner.name} className="award__winner-name">{winner.name}</li>
+              ))}
+            </UL>
+          </AwardCard>
+        ))
+      }
     </Box>
   );
 };

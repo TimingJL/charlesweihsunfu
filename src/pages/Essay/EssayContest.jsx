@@ -31,21 +31,21 @@ const EssayContest = () => {
 
       <P>
         <b>{`SUBMISSIONS`}</b>
-        <div>{`Three copies of the essay (double-spaced, 12 point Times Roman font), should be sent directly to the Fu Foundation office. Previously published papers are not acceptable. SUBMISSIONS SHOULD NOT EXCEED 5000 WORDS OR 2O PAGES (excluding notes and bibliography).`}</div>
+        <>{`Three copies of the essay (double-spaced, 12 point Times Roman font), should be sent directly to the Fu Foundation office. Previously published papers are not acceptable. SUBMISSIONS SHOULD NOT EXCEED 5000 WORDS OR 2O PAGES (excluding notes and bibliography).`}</>
       </P>
 
       <br />
 
       <P>
         <b>{`DEADLINE:`}</b>
-        <div>{`October 15, 2006`}</div>
+        <>{`October 15, 2006`}</>
       </P>
 
       <br />
 
       <P>
         <b>{`JUDGING CRITERIA`}</b>
-        <div>{`The purpose of the contest is to encourage young scholars who show promise of making important contributions to the study and development of Chinese philosophy or Asian philosophy related to Chinese thought. Submissions will be evaluated on the following criteria:`}</div>
+        <>{`The purpose of the contest is to encourage young scholars who show promise of making important contributions to the study and development of Chinese philosophy or Asian philosophy related to Chinese thought. Submissions will be evaluated on the following criteria:`}</>
       </P>
 
       <Quot>

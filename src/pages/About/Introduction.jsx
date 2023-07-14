@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { H2, P, UL, OL, Quot } from 'src/components/commonStyled';
+import { H2, P, UL, OL, Quot, Divider } from 'src/components/commonStyled';
 
 import LogoPath from '../../assets/FuLogo.jpg';
 
@@ -38,7 +38,7 @@ const Introduction = () => {
           {`Donations to the Fu Foundation are tax deductible.`}
         </P>
       </div>
-      <hr />
+      <Divider />
       <H2>{`THE FIELD-BEING FORUM, 2000`}</H2>
       <div className='about-content'>
         <P>
@@ -84,7 +84,7 @@ const Introduction = () => {
           {`Sandra A. Wawrytko-Fu, Ph.D.`}
         </P>
       </div>
-      <hr />
+      <Divider />
       <H2>{`ABOUT THE FU FOUNDATION LOGO`}</H2>
       <div className='about-content'>
         <P>
@@ -102,7 +102,7 @@ const Introduction = () => {
           {`Life, Love, Death, and Transformation are all concerns closely connected to the Mission of the Fu Foundation as we seek to sustain the philosophical flights of Dr. Fu's amazing mind and spirit.`}
         </P>
       </div>
-      <hr />
+      <Divider />
       <H2>MISSION STATEMENT</H2>
       <div className='about-content'>
         <P>

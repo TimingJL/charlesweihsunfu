@@ -19,7 +19,7 @@ export const H4 = styled.h4`
 `;
 
 export const P = styled.p`
-
+  text-align: justify;
 `;
 
 export const UL = styled.ul`
@@ -72,4 +72,21 @@ export const PageHeader = styled.div`
   font-weight: 900;
   letter-spacing: 1px;
   font-size: min(max(3.5vw, 30px), 40px);
+`;
+
+export const AwardCard = styled.div`
+  margin: 20px 0px;
+  border: 1px solid #EEE;
+  border-radius: 4px;
+  padding: 12px 20px;
+  .award__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px 0px 16px;
+  }
+  .award__description {
+    font-size: 16px;
+    color: #757575;
+    white-space: pre-line;
+  }
 `;
