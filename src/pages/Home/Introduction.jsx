@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
+import apidaNewsImgPath from "src/assets/centerOfAsian/APIDA_news_Dean_and_Virginia.jpeg";
 
 import CardImg1 from '../../assets/hsilai.jpg';
 import SDSU_Img from '../../assets/SDSU_Arts_&_Letters_New_Building.jpg';
@@ -86,6 +87,21 @@ const Introduction = () => {
   return(
     <StyledContainer maxWidth="md">
       <Stack spacing={8}>
+        <div>
+          <Stack alignItems="center">
+            <SectionTitle>Center of Asian &  Pacific Studies</SectionTitle>
+          </Stack>
+          <Card>
+            <Image $src={apidaNewsImgPath} />
+            <Content>
+              <Title>The Charles Wei-hsun Fu Center of Asian & Pacific Studies is now a reality</Title>
+              <Description>The Charles Wei-hsun Fu Center of Asian & Pacific Studies is now a reality. It is wonderful to think of all the students who will benefit in the future!</Description>
+              <Stack spacing={4} alignItems="flex-end">
+                <Button variant="contained" sx={buttonSX} onClick={() => {navigate(routePathConfig.about);}}>More</Button>
+              </Stack>
+            </Content>
+          </Card>
+        </div>
         <div>
           <Stack alignItems="center">
             <SectionTitle>Introduction</SectionTitle>
